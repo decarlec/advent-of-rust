@@ -49,10 +49,8 @@ pub fn pt2(file_reader: BufReader<File>){
                 max_blue: 0,
                 max_green: 0
             };
-        println!("Game:{}", game.num);
         let rounds : Vec<&str>  = line.split_once(':').unwrap().1.split(';').collect();
         for round in rounds.iter() {
-            println!("Round:{}", round);
             let sets = round.split(',').into_iter();         
             for set in sets {
                 let color = Color::from_str(set).unwrap(); 
@@ -63,7 +61,6 @@ pub fn pt2(file_reader: BufReader<File>){
                 }
             }
         }
-        println!("game:{} \nred:{}\ngreen:{}\nblue:{}", game.num, game.max_red, game.max_green, game.max_blue);
         result += game.max_blue*game.max_green*game.max_red;
     } 
 
