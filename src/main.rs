@@ -5,6 +5,7 @@ use utils::Day;
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 fn main() {
     let one = Day::new(1, 2023);
@@ -15,6 +16,8 @@ fn main() {
     let three = Day::new(3, 2023);
     day3::pt1(three.get_input());
     day3::pt2(three.get_input());
+    let four = Day::new(4, 2023);
+    day4::pt2(four.get_input());
     //let idx = "nine91threepdcthjkmrthreeeightwonsg".find("three");
     //let idx = "nine91threepdcthjkmrthreeeightwonsg".find("three");
     //if let Some(a) = idx {
