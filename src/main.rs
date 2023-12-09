@@ -22,6 +22,7 @@ fn main() {
 
     let five = Day::new(5, 2023);
     day5::pt1(five.get_input());
+    day5::pt2(five.get_input());
 
     //let idx = "nine91threepdcthjkmrthreeeightwonsg".find("three");
     //let idx = "nine91threepdcthjkmrthreeeightwonsg".find("three");
