@@ -9,6 +9,7 @@ mod day4;
 mod day5;
 mod day6;
 mod day7;
+mod day8;
 
 fn main() {
     let one = Day::new(1, 2023);
@@ -29,8 +30,10 @@ fn main() {
     let six = Day::new(6, 2023);
 //    day6::pt1(six.get_input());
     let seven = Day::new(7, 2023);
-    day7::pt1(seven.get_input());
+//k    day7::pt1(seven.get_input());
 
+    let eight = Day::new(8, 2023);
+    day8::pt1(eight.get_input());
     //let idx = "nine91threepdcthjkmrthreeeightwonsg".find("three");
     //let idx = "nine91threepdcthjkmrthreeeightwonsg".find("three");
     //if let Some(a) = idx {

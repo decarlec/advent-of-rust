@@ -73,6 +73,7 @@ fn get_hand_type(cards: [char;5]) -> HandType {
     
     println!("hand {}", cards.iter().collect::<String>());
     if jokers == 5 { return HandType::FiveOfKind; }
+
     let largest = uniques.iter().max_by(|a, b| { 
         if a.1 > b.1 { return Ordering::Greater;}
         if a.1 < b.1 { return Ordering::Less;}
