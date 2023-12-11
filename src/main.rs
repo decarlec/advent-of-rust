@@ -10,6 +10,7 @@ mod day5;
 mod day6;
 mod day7;
 mod day8;
+mod day9;
 
 fn main() {
     let one = Day::new(1, 2023);
@@ -33,12 +34,9 @@ fn main() {
 //k    day7::pt1(seven.get_input());
 
     let eight = Day::new(8, 2023);
-    day8::pt1(eight.get_input());
-    //let idx = "nine91threepdcthjkmrthreeeightwonsg".find("three");
-    //let idx = "nine91threepdcthjkmrthreeeightwonsg".find("three");
-    //if let Some(a) = idx {
-    //println!("{}", a);
-    //}
-    //day2::day2(utils::get_input(2, 2023));
+//    day8::pt1(eight.get_input());
+    let nine = Day::new(9, 2023);
+    day9::pt1(nine.get_input());
+//
 }
 
